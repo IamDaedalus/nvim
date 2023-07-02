@@ -18,6 +18,8 @@ return require('packer').startup(function(use)
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+	use('nvim-treesitter/nvim-treesitter-context')
+	use('lewis6991/gitsigns.nvim')
 
 	use('folke/tokyonight.nvim')
 	use('ajmwagar/vim-deus')
@@ -42,4 +44,11 @@ return require('packer').startup(function(use)
 		{'L3MON4D3/LuaSnip'},     -- Required
 	}
 }
+
+	use({
+		"https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+		config = function()
+			require("lsp_lines").setup()
+		end,
+	})
 end)

@@ -1,5 +1,9 @@
 vim.keymap.set ("n", "<leader>pv", vim.cmd.Ex)
 
+vim.keymap.set("n", "[c", function()
+  require("treesitter-context").go_to_context()
+end, { silent = true })
+
 -- custom keymappings
 vim.keymap.set({"n", "v"}, "<leader>y", "\"+y")
 vim.keymap.set('n', '<leader>w', [[:%s/\s\+$//e<CR>]])
