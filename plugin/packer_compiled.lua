@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/daedalus/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["dressing.nvim"] = {
+    loaded = true,
+    path = "/home/daedalus/.local/share/nvim/site/pack/packer/start/dressing.nvim",
+    url = "https://github.com/stevearc/dressing.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/daedalus/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -104,6 +109,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/daedalus/.local/share/nvim/site/pack/packer/start/lsp_lines.nvim",
     url = "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
+  },
+  ["lspkind.nvim"] = {
+    loaded = true,
+    path = "/home/daedalus/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
+    url = "https://github.com/onsails/lspkind.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -174,6 +184,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/daedalus/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-love-docs"] = {
+    loaded = true,
+    path = "/home/daedalus/.local/share/nvim/site/pack/packer/start/vim-love-docs",
+    url = "https://github.com/davisdude/vim-love-docs"
   }
 }
 

@@ -16,3 +16,16 @@ vim.keymap.set('v', '<', '<gv')
 vim.keymap.set('v', '>', '>gv')
 -- replace current text
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+-- remove trailing whitespace
+vim.cmd([[
+nnoremap <silent> <F5> :lua remove_trailing_whitespace()<CR>
+]])
+
+function remove_trailing_whitespace()
+	local saved_search = vim.fn.getreg('/')
+	vim.cmd([[
+	let _s=@/ | %s/\s\+$//e | let @/=_s | nohl | unlet _s
+	]])
+	vim.fn.setreg('/', saved_search)
+end
+
