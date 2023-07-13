@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
 	use('onsails/lspkind.nvim')
 	use('stevearc/dressing.nvim')
 	use('davisdude/vim-love-docs')
+	use('OmniSharp/omnisharp-vim')
 
 	use('folke/tokyonight.nvim')
 	use('ajmwagar/vim-deus')

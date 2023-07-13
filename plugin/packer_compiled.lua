@@ -150,6 +150,11 @@ _G.packer_plugins = {
     path = "/home/daedalus/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
   },
+  ["omnisharp-vim"] = {
+    loaded = true,
+    path = "/home/daedalus/.local/share/nvim/site/pack/packer/start/omnisharp-vim",
+    url = "https://github.com/OmniSharp/omnisharp-vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/daedalus/.local/share/nvim/site/pack/packer/start/packer.nvim",

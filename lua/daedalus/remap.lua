@@ -28,4 +28,3 @@ function remove_trailing_whitespace()
 	]])
 	vim.fn.setreg('/', saved_search)
 end
-

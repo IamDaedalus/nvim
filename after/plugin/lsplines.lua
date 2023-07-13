@@ -6,10 +6,5 @@ vim.diagnostic.config({
 	virtual_lines = { only_current_line = true },
 })
 
-vim.keymap.set(
-"",
-"<Leader>l",
-require("lsp_lines").toggle,
-{ desc = "Toggle lsp_lines" }
-)
+vim.keymap.set("", "<Leader>l",require("lsp_lines").toggle,{ desc = "Toggle lsp_lines" })
 
