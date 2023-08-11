@@ -25,6 +25,14 @@ return require('packer').startup(function(use)
 	use('davisdude/vim-love-docs')
 	use('OmniSharp/omnisharp-vim')
 
+	use {
+		'goolord/alpha-nvim',
+		requires = { 'nvim-tree/nvim-web-devicons' },
+		config = function ()
+			require'alpha'.setup(require'alpha.themes.startify'.config)
+		end
+	}
+
 	use('folke/tokyonight.nvim')
 	use('ajmwagar/vim-deus')
 
