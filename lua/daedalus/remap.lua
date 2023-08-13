@@ -2,13 +2,13 @@ vim.cmd('colorscheme deus')
 vim.opt.guicursor = ""
 -- leader key for vim
 vim.g.mapleader = ' '
-vim.keymap.set ("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("n", "[c", function()
   require("treesitter-context").go_to_context()
 end, { silent = true })
 
 -- custom keymappings
+-- copy to system clipboard
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set('n', '<leader>w', [[:%s/\s\+$//e<CR>]])
@@ -17,13 +17,15 @@ vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gvzz")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gvzz")
 -- indent selected text faster
 vim.keymap.set('v', '<', '<gv')
-vim.keymap.set('v', '<', '<gv')
 vim.keymap.set('v', '>', '>gv')
 
 -- make file executable
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+vim.keymap.set("n", "<leader>x", ":!chmod +x %<CR>", { silent = true })
 -- enter netrw
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader><leader>", ":so<CR>")
+-- create a new file in current directory
+vim.keymap.set("n", "<leader>n", ":!touch ")
 
 -- imported from theprimeagen
 vim.opt.swapfile = false
