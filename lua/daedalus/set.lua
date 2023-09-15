@@ -1,3 +1,4 @@
+-- Lua
 -- editor options
 vim.cmd('set cursorline')
 vim.opt.nu = true

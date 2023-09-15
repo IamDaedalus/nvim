@@ -1,4 +1,3 @@
-vim.cmd('colorscheme deus')
 vim.opt.guicursor = ""
 -- leader key for vim
 vim.g.mapleader = ' '
@@ -9,6 +8,9 @@ end, { silent = true })
 
 -- custom keymappings
 -- copy to system clipboard
+vim.keymap.set("n", "x", '"_x')
+vim.keymap.set("i", "jk", "<ESC>")
+vim.keymap.set("i", "JK", "<ESC>")
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set('n', '<leader>w', [[:%s/\s\+$//e<CR>]])
