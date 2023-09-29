@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
 	use('stevearc/dressing.nvim')
 	use('davisdude/vim-love-docs')
 	use('OmniSharp/omnisharp-vim')
+	use('ThePrimeagen/harpoon')
 
 	use {
 		'goolord/alpha-nvim',
